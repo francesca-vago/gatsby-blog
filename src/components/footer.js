@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ siteAuthor }) => {
     return (
         <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            Built with ❤️ by {siteAuthor}, © {new Date().getFullYear()}
         </footer>
     )
 }
