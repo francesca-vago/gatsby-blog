@@ -1,8 +1,9 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+export default function AboutPage () {
+    return (
         <Layout>
             <SEO title="About" />
             <h1>About</h1>
@@ -12,7 +13,5 @@ const AboutPage = () => (
                 Quaerat, quam culpa.
             </p>
         </Layout>
-)
-
-
-export default AboutPage
+    )
+}

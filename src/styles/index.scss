@@ -1,10 +1,10 @@
   html {
-    font-family: 'Glacial', sans-serif;
+    font-family: 'Glacial', 'Poppins', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
   body {
-    font-family: Glacial, sans-serif;
+    font-family: 'Glacial', 'Poppins' sans-serif;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -186,7 +186,7 @@
     font: inherit;
   }
   html {
-    font: 112.5%/1.45em georgia, serif;
+    font: 112.5%/1.45em;
     box-sizing: border-box;
     overflow-y: scroll;
   }
@@ -201,7 +201,7 @@
   }
   body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: georgia, serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
