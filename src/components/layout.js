@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Footer from "./footer"
+import Navbar from './Navbar/Navbar'
+import Footer from "./Footer/Footer"
 
 import layoutStyles from "./layout.module.scss"
 
@@ -26,13 +26,15 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const { author } = data.site.siteMetadata;
+
   return (
     <div className={layoutStyles.container}>
+      <Navbar />
       <div className={layoutStyles.content}>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
       </div>
-      <Footer siteAuthor={data.site.siteMetadata.author}/>
+      <Footer siteAuthor={author}/>
     </div>
   )
 }
