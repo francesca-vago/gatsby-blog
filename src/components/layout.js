@@ -16,10 +16,9 @@ import layoutStyles from "./layout.module.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query getAuthor {
       site {
         siteMetadata {
-          title
           author
         }
       }
@@ -29,9 +28,9 @@ const Layout = ({ children }) => {
   const { author } = data.site.siteMetadata;
 
   return (
-    <div className={layoutStyles.container}>
+    <div>
       <Navbar />
-      <div className={layoutStyles.content}>
+      <div>
         <main>{children}</main>
       </div>
       <Footer siteAuthor={author}/>
