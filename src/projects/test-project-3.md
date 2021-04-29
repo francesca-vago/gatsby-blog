@@ -1,8 +1,8 @@
 ---
-title:  Test Project
-stack:  Gatsby
-slug:   test-project
-date:   2021-04-29T00:00:00Z
+title:  Test Project 3
+stack:  React
+slug:   test-project-3
+date:   2021-05-01T00:00:00Z
 
 ---
 
